@@ -18,6 +18,7 @@ resource "aws_instance" "server" {
 
   ami           = "ami-0ca3b0faa0c4c4bbd"
   instance_type = "t2.micro"
+  key_name = "osaka-server2"
 
   tags = {
     Name = "Server ${count.index}"
